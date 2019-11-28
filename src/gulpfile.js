@@ -51,7 +51,7 @@ var gulp = require('gulp');
 
             .pipe(gulp.dest('../css'))
 
-            .pipe(stream);
+            .pipe(browserSync.stream());
 
     }
 

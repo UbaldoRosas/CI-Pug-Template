@@ -16,7 +16,8 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->vars([
-			'title' => "Index",
+			'title' => "Inicio",
+			'styles' => 'home',
 			'location' => $this->location->get()
 		]);
 		

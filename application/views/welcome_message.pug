@@ -1,10 +1,6 @@
-doctype html
-html(lang='es-MX')
-	head
-		meta(charset="UTF-8")
-		title=title
-		link(rel="stylesheet", href="css/base.css")
+extends layout/header.pug
 
-	body
-		h1 Engrane studio
-		p Location #{location}
+append content
+	.reservaciones
+		.reservaciones__widget
+			<script type='text/javascript' src='//www.opentable.com.mx/widget/reservation/loader?rid=17803&type=multi&theme=wide&iframe=true&domain=commx&lang=es-MX&newtab=false'></script>
