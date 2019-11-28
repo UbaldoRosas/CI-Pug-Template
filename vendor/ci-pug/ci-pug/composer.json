@@ -1,0 +1,28 @@
+{
+    "name": "ci-pug/ci-pug",
+    "replace": {
+        "ci-jade/ci-jade": "self.version"
+    },
+    "description": "HAML-like template engine for CodeIgniter",
+    "keywords": ["pug", "jade", "minification", "template"],
+    "homepage": "https://github.com/ci-jade/ci-jade",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kylekatarnls",
+            "homepage": "http://github.com/kylekatarnls",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "pug-php/pug": "^2.5.3 || ^3.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8.35 <6.0"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    }
+}

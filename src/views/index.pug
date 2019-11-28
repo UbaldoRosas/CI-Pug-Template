@@ -1,0 +1,25 @@
+
+- var title = "Inicio"
+
+p#location
+    .
+        <?php
+            $apikey = "48113aa385124b7fd75a56ee096f0fe9907e9a737fe0e9f81e60fe6e24444dae";
+            $ip = '187.189.135.21';
+            //$ip = '187.190.191.215';
+            $url = "http://api.ipinfodb.com/v3/ip-city/?key=48113aa385124b7fd75a56ee096f0fe9907e9a737fe0e9f81e60fe6e24444dae&ip=".$ip."&format=xml";
+            $xml = simplexml_load_file($url);
+            //var_dump($xml);
+            $location = $xml->regionName;
+        ?>
+
+- var location = <?php echo $location?>;
+script.
+
+include layout/header.pug
+
+append content
+    .widget
+        <script type='text/javascript' src='//www.opentable.com.mx/widget/reservation/loader?rid=17803&type=multi&theme=wide&iframe=true&domain=commx&lang=es-MX&newtab=false'></script>
+
+include layout/footer.pug

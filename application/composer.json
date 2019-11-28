@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ci-pug/ci-pug": "^2.0"
+    }
+}
